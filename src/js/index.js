@@ -6,9 +6,9 @@ const personagens = document.querySelectorAll('.personagem');
 personagens.forEach(personagem => {
     personagem.addEventListener('mouseenter', () => {
 
-        if(window.innerWidth < 450{
-            window.scrollTo({top: 0, behavior: 'smooh'});
-        })
+        if (window.innerWidth < 450) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
 
         //passo 3 - verificar se já existe um personagem selecionado, se sim, devemos removar a seleção dele
         const personagemSelecionado = document.querySelector('.selecionado');
@@ -32,6 +32,6 @@ personagens.forEach(personagem => {
         // passo 4 - alterar a descrição do personagem grande
         const descricaoPersonagem = document.getElementById('descricao-personagem');
         descricaoPersonagem.innerText = personagem.getAttribute('data-description');
-        
+
     })
-})
+})  
