@@ -96,6 +96,7 @@ body::before {
     border-bottom: 2px solid #47f4ff;
     letter-spacing: 2px;
     text-align: center;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
